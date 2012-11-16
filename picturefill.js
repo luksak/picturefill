@@ -10,7 +10,7 @@
 		
 		// Loop the pictures
 		for( var i = 0, il = ps.length; i < il; i++ ){
-			if( ps[ i ].getAttribute( "data-picture" ) !== null ){
+			if( ps[ i ].getAttribute( "data-picture" ) !== null && ps[ i ].className !== 'picture-processed' ){
 
 				var sources = ps[ i ].getElementsByTagName( "div" ),
 					matches = [];
@@ -39,7 +39,8 @@
 			else if( picImg ){
 				ps[ i ].removeChild( picImg );
 			}
-		}
+                        ps[ i ].className += "picture-processed";
+                    }
 		}
 	};
 	
