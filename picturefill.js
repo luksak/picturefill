@@ -25,7 +25,7 @@
 				}
 
 			// Find any existing img element in the picture element
-			var picImg = ps[ i ].getElementsByTagName( "img" )[ 0 ];
+			var picImg = ps[ i ].getElementsByTagName( ">img" )[ 0 ];
 
 			if( matches.length ){			
 				if( !picImg ){
